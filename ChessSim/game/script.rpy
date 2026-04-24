@@ -91,7 +91,7 @@ label start:
     
     "Welcome to the Grand Chessboard Academy, where pieces from both kingdoms coexist in an uneasy truce."
     
-    "As a new neutral observer assigned to document the lives of these legendary warriors, you'll witness their stories unfold."
+    "As a new normal observer assigned to document the lives of these legendary warriors, you'll witness their stories unfold."
     
     python:
         player_name = renpy.input("What is your name?", default="Alex", length=20)
@@ -106,7 +106,7 @@ label start:
     
     "Suddenly, a regal voice calls out behind you."
     
-    show wking neutral
+    show wking normal
     with dissolve
     
     wking "Ah, you must be the new observer. I am King Aldric of the White Kingdom."
@@ -119,7 +119,7 @@ label start:
     
     wking "Though I must warn you - not everyone here shares my optimism about this academy."
     
-    show bking serious at right
+    show bking angered at right
     with dissolve
     
     bking "Aldric speaks the truth, for once."
@@ -150,8 +150,8 @@ label start:
     
     "You decide to explore the academy library, where you encounter two striking figures engaged in a chess match."
     
-    show wqueen neutral at left
-    show bqueen mysterious at right
+    show wqueen happy at left
+    show bqueen normal at right
     with dissolve
     
     wqueen "Checkmate in seven moves, Noctis. You've left your king exposed."
@@ -249,18 +249,18 @@ label explore_academy:
     
     "You head to the training grounds where several pieces are practicing."
     
-    show wknight1 confident
+    show wknight1 happy
     with dissolve
     
     wknight1 "En garde!"
     
-    "A silver-armored knight executes a perfect L-shaped jump, landing gracefully."
+    "A silver-armored knight executes a perfect L-shaped jump, landing happyly."
     
     wknight1 "Ah, the observer! Knight Sterling at your service."
     
     wknight1 "Care to see some unconventional tactics? We knights specialize in the unexpected."
     
-    show bknight1 cool at right
+    show bknight1 happy at right
     with dissolve
     
     bknight1 "Sterling, you're showing off again."
@@ -273,7 +273,7 @@ label explore_academy:
     
     bknight1 "You count differently in the White Kingdom. I count honestly."
     
-    "They both laugh - clearly this is a friendly rivalry."
+    "They both laugh - clearly this is a happy rivalry."
     
     mc "You two seem to get along well despite being from different kingdoms."
     
@@ -283,14 +283,14 @@ label explore_academy:
     
     wknight1 "I'll take that as a compliment."
     
-    show wpawn1 cheerful at left
+    show wpawn1 happy at left
     with dissolve
     
     wpawn1 "Um, excuse me? Are you the observer everyone's talking about?"
     
     "A young white pawn approaches nervously."
     
-    wpawn1 "I'm Aria. I just wanted to say... it's nice to have someone neutral here."
+    wpawn1 "I'm Aria. I just wanted to say... it's nice to have someone normal here."
     
     wpawn1 "Sometimes the tension between kingdoms makes things awkward."
     
@@ -300,7 +300,7 @@ label explore_academy:
     
     wpawn1 "But that's okay! We work together and protect each other."
     
-    show bpawn4 thoughtful at right behind bknight1
+    show bpawn4 normal at right behind bknight1
     with dissolve
     
     bpawn4 "Aria's right. Pawns have to stick together."
@@ -334,20 +334,20 @@ label meet_bishops:
     scene bg academy_chapel
     with fade
     
-    "The academy chapel is quiet, lit by diagonal rays of sunlight through tall windows."
+    "The academy chapel is normal, lit by diagonal rays of sunlight through tall windows."
     
-    show wbishop1 serene
+    show wbishop1 normal
     with dissolve
     
     wbishop1 "Welcome, observer. I am Bishop Celeste."
     
-    wbishop1 "This chapel serves all pieces, regardless of color. A true neutral space."
+    wbishop1 "This chapel serves all pieces, regardless of color. A true normal space."
     
     mc "It's beautiful. Do you maintain it?"
     
     wbishop1 "Along with my counterpart, yes."
     
-    show bbishop2 calm at right
+    show bbishop2 normal at right
     with dissolve
     
     bbishop2 "Bishop Vesper. I handle the evening services."
@@ -386,7 +386,7 @@ label meet_rooks:
     
     "The fortress training area is where defensive specialists practice."
     
-    show wrook1 stoic
+    show wrook1 normal
     with dissolve
     
     wrook1 "Halt. State your purpose."
@@ -399,7 +399,7 @@ label meet_rooks:
     
     wrook1 "You may proceed, but stay within designated areas."
     
-    show brook1 stern at right
+    show brook1 angered at right
     with dissolve
     
     brook1 "Bastion, stop interrogating visitors. I'm Rook Fortress."
@@ -418,7 +418,7 @@ label meet_rooks:
     
     "Bastion's stern expression softens slightly."
     
-    wrook1 "As is Fortress's tactical acumen."
+    wrook1 "As is Fortress's normal acumen."
     
     "You sense a deep mutual respect between these two guardians."
     
@@ -431,9 +431,9 @@ label academy_evening:
     
     "As evening falls, pieces from both kingdoms gather in the courtyard for social time."
     
-    show wpawn5 energetic at left
-    show bpawn7 dramatic at center  
-    show wpawn3 sweet at right
+    show wpawn5 happy at left
+    show bpawn7 happy at center  
+    show wpawn3 happy at right
     with dissolve
     
     wpawn5 "Eden, reporting for duty! Well, social duty anyway."
@@ -444,42 +444,42 @@ label academy_evening:
     
     "More pawns join the group."
     
-    show wpawn2 nervous at left behind wpawn5
+    show wpawn2 tired at left behind wpawn5
     with dissolve
     
     wpawn2 "Hi, I'm Beck. Sorry, I'm not great with new people..."
     
     wpawn5 "Beck's just shy! But they're super talented at chess problem-solving."
     
-    show bpawn2 confident at right behind wpawn3
+    show bpawn2 happy at right behind wpawn3
     with dissolve
     
     bpawn2 "Jasper's the name. These white pawns aren't so bad once you get to know them."
     
-    show wpawn4 friendly
+    show wpawn4 happy
     with dissolve
     
     wpawn4 "Drew here! Want to join our game night?"
     
-    show bpawn3 quiet
+    show bpawn3 normal
     with dissolve
     
     bpawn3 "I'm Kai. I usually just watch, but you're welcome to sit with me."
     
     "The pawns all chat animatedly, their individual personalities shining through."
     
-    show wpawn6 optimistic at left
-    show bpawn5 sarcastic at right
+    show wpawn6 happy at left
+    show bpawn5 happy at right
     with dissolve
     
     wpawn6 "Finn! Pleased to meet you! Isn't this academy amazing?"
     
     bpawn5 "Milo. It's... adequate. Though Finn's enthusiasm is infectious, I'll admit."
     
-    show wpawn7 graceful
-    show bpawn6 mysterious
-    show wpawn8 hopeful
-    show bpawn8 witty
+    show wpawn7 happy
+    show bpawn6 normal
+    show wpawn8 happy
+    show bpawn8 happy
     with dissolve
     
     wpawn7 "Grace. I help organize these social events."
@@ -537,13 +537,13 @@ label knight_evening:
     scene bg academy_stables
     with fade
     
-    show wknight2 noble at left
-    show bknight2 edgy at right
+    show wknight2 normal at left
+    show bknight2 happy at right
     with dissolve
     
     wknight2 "Ah, observer! I'm Knight Galahad, Sterling's partner."
     
-    wknight2 "Unlike my show-off colleague, I believe in quiet competence."
+    wknight2 "Unlike my show-off colleague, I believe in normal competence."
     
     bknight2 "And I'm Knight Shadow. Dante's the flashy one in our pair."
     
@@ -572,8 +572,8 @@ label bishop_evening:
     scene bg academy_chapel_night
     with fade
     
-    show wbishop2 wise at left
-    show bbishop1 mysterious at right
+    show wbishop2 normal at left
+    show bbishop1 normal at right
     with dissolve
     
     wbishop2 "Welcome, observer. I'm Bishop Lumina."
@@ -605,8 +605,8 @@ label rook_evening:
     scene bg academy_walls
     with fade
     
-    show wrook2 disciplined at left
-    show brook2 tactical at right
+    show wrook2 normal at left
+    show brook2 normal at right
     with dissolve
     
     wrook2 "Observer. I'm Rook Rampart, Bastion's counterpart."
@@ -636,15 +636,15 @@ label royal_summit:
     scene bg academy_throne_room
     with fade
     
-    show wking thoughtful at left
-    show bking contemplative at right
+    show wking normal at left
+    show bking normal at right
     with dissolve
     
     wking "Ah, observer. Obsidian and I hold these private summits regularly."
     
     bking "To ensure our... truce remains stable."
     
-    wking "Please, join us. Your neutral perspective could help."
+    wking "Please, join us. Your normal perspective could help."
     
     mc "What are you discussing tonight?"
     
@@ -658,7 +658,7 @@ label royal_summit:
     
     "The two kings regard each other with a complex mix of respect and wariness."
     
-    bking "Tell me, observer. In your neutral opinion, can natural enemies truly become allies?"
+    bking "Tell me, observer. In your normal opinion, can natural enemies truly become allies?"
     
     menu:
         "With time and effort, yes":
@@ -673,7 +673,7 @@ label royal_summit:
             wking "And I believe that willingness is growing."
         
         "I'm not sure yet, I need to observe more":
-            wking "An honest answer. We appreciate your thoughtfulness."
+            wking "An honest answer. We appreciate your normalness."
             bking "Indeed. Premature conclusions help no one."
     
     jump ending_day_one
@@ -734,8 +734,8 @@ label day_two:
     
     "As you step outside, you notice unusual tension in the air."
     
-    show wpawn5 energetic at left
-    show bpawn7 dramatic at right
+    show wpawn5 happy at left
+    show bpawn7 happy at right
     with dissolve
     
     wpawn5 "Morning, observer! You feel that weird vibe today?"
@@ -748,7 +748,7 @@ label day_two:
     
     bpawn7 "Not everyone's ready to celebrate a draw when they think they should have won."
     
-    "Orion's usually dramatic demeanor is more somber than usual."
+    "Orion's usually happy demeanor is more somber than usual."
     
     wpawn5 "Both kings are giving memorial speeches later. Should be... interesting."
     
@@ -782,7 +782,7 @@ label day_two_kings:
     
     "You find both kings on the fortress walls, standing at opposite ends."
     
-    show wking thoughtful at left
+    show wking normal at left
     with dissolve
     
     wking "Ah, observer. Come to document the ceremony preparations?"
@@ -791,7 +791,7 @@ label day_two_kings:
     
     wking "An astute question. This anniversary is... complicated."
     
-    show bking contemplative at right
+    show bking normal at right
     with dissolve
     
     bking "Complicated is one word for it. Frustrating is another."
@@ -830,9 +830,9 @@ label day_two_pawns:
     
     "You find a gathering of pawns - both white and black - sitting together in a circle."
     
-    show wpawn1 cheerful at left
-    show bpawn4 thoughtful at center
-    show wpawn8 hopeful at right
+    show wpawn1 happy at left
+    show bpawn4 normal at center
+    show wpawn8 happy at right
     with dissolve
     
     wpawn1 "Oh! Observer, you should join us. We're sharing stories."
@@ -843,8 +843,8 @@ label day_two_pawns:
     
     wpawn8 "We think it's important to remember them together. Not divided by kingdom."
     
-    show wpawn2 nervous
-    show bpawn3 quiet  
+    show wpawn2 tired
+    show bpawn3 normal  
     with dissolve
     
     wpawn2 "I... I had a friend. A black pawn from the other side of the board."
@@ -859,18 +859,18 @@ label day_two_pawns:
     
     "Beck wipes their eyes, and several other pawns reach out supportively."
     
-    show wpawn3 sweet
-    show bpawn2 confident
+    show wpawn3 happy
+    show bpawn2 happy
     with dissolve
     
     wpawn3 "That's why this academy matters so much. So no more pawns have to face that choice."
     
     bpawn2 "Exactly. We're the ones who see the cost of war most clearly."
     
-    show wpawn4 friendly
-    show bpawn5 sarcastic
-    show wpawn6 optimistic
-    show bpawn6 mysterious
+    show wpawn4 happy
+    show bpawn5 happy
+    show wpawn6 happy
+    show bpawn6 normal
     with dissolve
     
     wpawn4 "Today's hard, but we're facing it together."
@@ -911,8 +911,8 @@ label day_two_queens:
     
     "You find both queens in the library, working together on something."
     
-    show wqueen neutral at left
-    show bqueen mysterious at right
+    show wqueen happy at left
+    show bqueen normal at right
     with dissolve
     
     wqueen "Observer! Perfect timing. We need an impartial opinion."
@@ -954,7 +954,7 @@ label day_two_queens:
     
     wqueen "You have good instincts, observer. We're glad you're here."
     
-    bqueen "Agreed. Your neutrality is more valuable than you might realize."
+    bqueen "Agreed. Your normality is more valuable than you might realize."
     
     "The queens share a look of mutual respect."
     
@@ -971,10 +971,10 @@ label day_two_knights:
     
     "You find all four knights training together, their movements synchronized."
     
-    show wknight1 confident at left
-    show bknight1 cool
-    show wknight2 noble
-    show bknight2 edgy at right
+    show wknight1 happy at left
+    show bknight1 happy
+    show wknight2 normal
+    show bknight2 happy at right
     with dissolve
     
     wknight1 "Observer! Watch this coordinated jump pattern!"
@@ -1028,8 +1028,8 @@ label day_two_ceremony:
     
     "All thirty-two pieces are present, arranged in a large circle rather than opposing sides."
     
-    show wking serious at left
-    show bking serious at right
+    show wking angered at left
+    show bking angered at right
     with dissolve
     
     wking "Today marks the anniversary of the Great Stalemate."
@@ -1079,7 +1079,7 @@ label day_two_aftermath:
     "You notice someone sitting alone and approach."
     
     menu:
-        "Sit with a contemplative Bishop":
+        "Sit with a normal Bishop":
             jump day_two_bishop_moment
         
         "Join the Rooks on security patrol":
@@ -1098,7 +1098,7 @@ label day_two_bishop_moment:
     
     "You find Bishop Vesper in the chapel, lighting candles."
     
-    show bbishop2 calm
+    show bbishop2 normal
     with dissolve
     
     bbishop2 "Observer. I wondered if you'd come here."
@@ -1107,7 +1107,7 @@ label day_two_bishop_moment:
     
     bbishop2 "Many pieces will visit tonight. To light candles for those we've lost."
     
-    show wbishop1 serene at left
+    show wbishop1 normal at left
     with dissolve
     
     wbishop1 "It's become a tradition. Celeste and I keep the chapel open all night on this day."
@@ -1120,8 +1120,8 @@ label day_two_bishop_moment:
     
     "You spend the next hour helping both bishops arrange candles and prepare the space."
     
-    show wbishop2 wise at right
-    show bbishop1 mysterious
+    show wbishop2 normal at right
+    show bbishop1 normal
     with dissolve
     
     wbishop2 "Observer, Lumina here. May I ask you something?"
@@ -1144,7 +1144,7 @@ label day_two_bishop_moment:
             wbishop2 "The diagonal cuts across the board, but it still moves forward."
         
         "I don't know yet, I'm still learning":
-            mc "I'm not wise enough to say. But I see everyone trying."
+            mc "I'm not normal enough to say. But I see everyone trying."
             bbishop2 "Humility is its own wisdom."
             wbishop1 "And trying is the first step toward healing."
     
@@ -1164,8 +1164,8 @@ label day_two_rook_moment:
     
     "You join the rooks on their patrol of the walls."
     
-    show wrook1 stoic at left
-    show brook1 stern at right
+    show wrook1 normal at left
+    show brook1 angered at right
     with dissolve
     
     wrook1 "Observer. You're welcome to join our patrol."
@@ -1176,8 +1176,8 @@ label day_two_rook_moment:
     
     wrook1 "Emotions can cloud judgment. We stay alert so others can grieve safely."
     
-    show wrook2 disciplined
-    show brook2 tactical
+    show wrook2 normal
+    show brook2 normal
     with dissolve
     
     wrook2 "Rampart reporting. Perimeter secure."
@@ -1233,7 +1233,7 @@ label day_two_pawn_romance:
 
 label aria_moment:
     
-    show wpawn1 cheerful
+    show wpawn1 happy
     with dissolve
     
     wpawn1 "Oh! I was hoping I'd see you today."
@@ -1264,6 +1264,7 @@ label aria_moment:
         "Take her hand supportively":
             $ affection_wpawn1 = 5
             "You reach out and take Aria's hand gently."
+            show wpawn1 love
             wpawn1 "Oh!"
             "She blushes but doesn't pull away."
             wpawn1 "I... I really appreciate you, observer."
@@ -1279,7 +1280,7 @@ label aria_moment:
 
 label luna_moment:
     
-    show bpawn4 thoughtful
+    show bpawn4 normal
     with dissolve
     
     bpawn4 "Observer. I was hoping to talk to you."
@@ -1298,11 +1299,11 @@ label luna_moment:
     
     bpawn4 "That's why Aria and I became friends despite kingdoms. We understand each other's path."
     
-    mc "You're very wise, Luna."
+    mc "You're very normal, Luna."
     
-    bpawn4 "Not wise. Just determined. Every step I take has to count."
+    bpawn4 "Not normal. Just determined. Every step I take has to count."
     
-    "She looks at you with quiet intensity."
+    "She looks at you with normal intensity."
     
     bpawn4 "And I think... maybe you count too. In my forward path."
     
@@ -1310,6 +1311,7 @@ label luna_moment:
         "I'd be honored to walk that path with you":
             $ affection_bpawn4 = 5
             mc "I'd be honored to be part of your journey, Luna."
+            show bpawn4 love
             bpawn4 "Really? You mean that?"
             mc "Absolutely. Your strength amazes me."
             bpawn4 "I... thank you. I don't open up easily, but with you, it feels natural."
@@ -1325,7 +1327,7 @@ label luna_moment:
 
 label hope_moment:
     
-    show wpawn8 hopeful
+    show wpawn8 happy
     with dissolve
     
     wpawn8 "Observer! I've been looking for you!"
@@ -1356,6 +1358,7 @@ label hope_moment:
         "Kiss her forehead gently":
             $ affection_wpawn8 = 5
             "You lean in and kiss Hope's forehead softly."
+            show wpawn8 love
             wpawn8 "Oh!"
             "She looks up at you with shining eyes."
             wpawn8 "I... I was hoping you might feel something too."
@@ -1372,7 +1375,7 @@ label hope_moment:
 
 label zara_moment:
     
-    show bpawn8 witty
+    show bpawn8 happy
     with dissolve
     
     bpawn8 "Well well, the observer graces me with their presence."
@@ -1383,7 +1386,7 @@ label zara_moment:
     
     mc "The ceremony moved you. I could see it."
     
-    "Zara's witty facade cracks slightly."
+    "Zara's happy facade cracks slightly."
     
     bpawn8 "Fine. Maybe it did. Happy now?"
     
@@ -1405,6 +1408,7 @@ label zara_moment:
         "Challenge her playfully":
             $ affection_bpawn8 = 5
             mc "Is that your way of saying you like me, Zara?"
+            show bpawn8 love
             bpawn8 "Maybe. You got a problem with that?"
             mc "Not at all. I like you too. Wit and all."
             bpawn8 "Well then. Guess we're doing this."
@@ -1434,7 +1438,7 @@ label day_two_queen_moment:
 
 label seraphina_deep:
     
-    show wqueen neutral
+    show wqueen happy
     with dissolve
     
     wqueen "Observer. I was just thinking about you."
@@ -1470,6 +1474,7 @@ label seraphina_deep:
             $ affection_wqueen = 7
             "You step forward, closing the gap."
             mc "Some rules are worth breaking, Your Majesty."
+            show wqueen love
             wqueen "Call me Seraphina. Please."
             "She leans in, and for a moment, the queen becomes simply a woman."
             wqueen "I haven't felt this way in centuries. You've awakened something I'd forgotten."
@@ -1486,7 +1491,7 @@ label seraphina_deep:
 
 label noctis_deep:
     
-    show bqueen mysterious
+    show bqueen normal
     with dissolve
     
     bqueen "I wondered when you'd find me."
@@ -1521,6 +1526,7 @@ label noctis_deep:
         "Match her intensity":
             $ affection_bqueen = 7
             mc "Then let's stop dancing around it. I want to know the real you."
+            show bqueen love
             bqueen "Bold. I like that."
             "She pulls you close with surprising gentleness."
             bqueen "Very well. But fair warning - I play for keeps."
@@ -1552,7 +1558,7 @@ label day_two_evening:
     
     "You notice a figure approaching in the darkness."
     
-    show wking friendly
+    show wking happy
     with dissolve
     
     wking "Observer. A word, if you have a moment?"
@@ -1561,9 +1567,9 @@ label day_two_evening:
     
     wking "I wanted to thank you. For your presence today."
     
-    wking "Your neutrality helps. But more than that... your genuine care shows."
+    wking "Your normality helps. But more than that... your genuine care shows."
     
-    show bking rare_smile at right
+    show bking happy at right
     with dissolve
     
     bking "I agree with Aldric. Surprisingly."
